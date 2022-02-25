@@ -7,6 +7,17 @@ html
     nav
         div.container
           h3 Todo App
+          ul
+            if user
+              li
+                div Hello# #{user.displayName}
+              li
+                a(href='/layout') Log out
+            else
+              li
+                a(href='/login') Login
+              li
+                a(href='/register') Register
 
 
 
